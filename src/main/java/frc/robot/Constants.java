@@ -17,7 +17,7 @@ import com.ctre.phoenix.motorcontrol.SupplyCurrentLimitConfiguration;
 public final class Constants {
     public static class TurnMotor {
         public static final double gearRatio = 1.0/16.0/1.3;
-        public static final double radius = 0.75; // meters
+        public static final double radius = 0.0508; // meters
         public static final double kwheelCircumference = 2*Math.PI*radius; // meters
     }
 

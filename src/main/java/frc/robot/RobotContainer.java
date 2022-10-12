@@ -7,7 +7,7 @@ package frc.robot;
 import edu.wpi.first.wpilibj.GenericHID;
 import edu.wpi.first.wpilibj.XboxController;
 import edu.wpi.first.wpilibj2.command.Command;
-import frc.robot.subsystems.SwerveTurn;
+import frc.robot.subsystems.*;
 
 /**
  * This class is where the bulk of the robot should be declared. Since Command-based is a
@@ -16,12 +16,12 @@ import frc.robot.subsystems.SwerveTurn;
  * subsystems, commands, and button mappings) should be declared here.
  */
 public class RobotContainer {
-  SwerveTurn swerveTurn;
+  AutoPID pidTune;
   // The robot's subsystems and commands are defined here...
 
   /** The container for the robot. Contains subsystems, OI devices, and commands. */
   public RobotContainer() {
-    this.swerveTurn = new SwerveTurn();
+    this.pidTune = new AutoPID();
     // Configure the button bindings
     configureButtonBindings();
   }
